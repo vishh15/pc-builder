@@ -1,0 +1,168 @@
+{
+  "CPU": [
+    {
+      "id": "cpu-ryzen5",
+      "type": "CPU",
+      "name": "AMD Ryzen 5 7600",
+      "price": 12000,
+      "image": "https://via.placeholder.com/400x300/2f6bff/ffffff?text=AMD+Ryzen+5",
+      "specifications": {
+        "socket": "AM5",
+        "cores": 6
+      }
+    },
+    {
+      "id": "cpu-i5",
+      "type": "CPU",
+      "name": "Intel Core i5-14600K",
+      "price": 15000,
+      "image": "https://via.placeholder.com/400x300/1f4fd1/ffffff?text=Intel+i5",
+      "specifications": {
+        "socket": "LGA1700",
+        "cores": 14
+      }
+    }
+  ],
+  "GPU": [
+    {
+      "id": "gpu-rtx4060",
+      "type": "GPU",
+      "name": "NVIDIA RTX 4060",
+      "price": 14500,
+      "image": "https://via.placeholder.com/400x300/ff6b35/ffffff?text=RTX+4060",
+      "specifications": {
+        "powerRequirement": 550,
+        "memory": "8GB"
+      }
+    },
+    {
+      "id": "gpu-rx7700",
+      "type": "GPU",
+      "name": "AMD Radeon RX 7700 XT",
+      "price": 15000,
+      "image": "https://via.placeholder.com/400x300/ff8c66/ffffff?text=RX+7700",
+      "specifications": {
+        "powerRequirement": 650,
+        "memory": "12GB"
+      }
+    }
+  ],
+  "RAM": [
+    {
+      "id": "ram-ddr5-32",
+      "type": "RAM",
+      "name": "Corsair Vengeance 32GB",
+      "price": 9000,
+      "image": "https://via.placeholder.com/400x300/19b78e/ffffff?text=Corsair+32GB",
+      "specifications": {
+        "type": "DDR5",
+        "speed": "5600MHz"
+      }
+    },
+    {
+      "id": "ram-ddr4-16",
+      "type": "RAM",
+      "name": "G.Skill Ripjaws 16GB",
+      "price": 6000,
+      "image": "https://via.placeholder.com/400x300/17d5a7/ffffff?text=G.Skill+16GB",
+      "specifications": {
+        "type": "DDR4",
+        "speed": "3200MHz"
+      }
+    }
+  ],
+  "Motherboard": [
+    {
+      "id": "mb-b650",
+      "type": "Motherboard",
+      "name": "ASUS Prime B650",
+      "price": 11000,
+      "image": "https://via.placeholder.com/400x300/ffc107/ffffff?text=ASUS+B650",
+      "specifications": {
+        "socket": "AM5",
+        "ramType": "DDR5",
+        "formFactor": "ATX"
+      }
+    },
+    {
+      "id": "mb-b760",
+      "type": "Motherboard",
+      "name": "MSI Pro B760",
+      "price": 10000,
+      "image": "https://via.placeholder.com/400x300/ffb300/ffffff?text=MSI+B760",
+      "specifications": {
+        "socket": "LGA1700",
+        "ramType": "DDR4",
+        "formFactor": "mATX"
+      }
+    }
+  ],
+  "Storage": [
+    {
+      "id": "ssd-1tb",
+      "type": "Storage",
+      "name": "Samsung 980 1TB NVMe",
+      "price": 7000,
+      "image": "https://via.placeholder.com/400x300/7d5aff/ffffff?text=Samsung+980",
+      "specifications": {
+        "type": "NVMe",
+        "capacity": "1TB"
+      }
+    },
+    {
+      "id": "hdd-2tb",
+      "type": "Storage",
+      "name": "Seagate Barracuda 2TB",
+      "price": 5000,
+      "image": "https://via.placeholder.com/400x300/6b5dff/ffffff?text=Seagate+2TB",
+      "specifications": {
+        "type": "HDD",
+        "capacity": "2TB"
+      }
+    }
+  ],
+  "PSU": [
+    {
+      "id": "psu-650",
+      "type": "PSU",
+      "name": "EVGA 650W Bronze",
+      "price": 6500,
+      "image": "https://via.placeholder.com/400x300/6366f1/ffffff?text=EVGA+650W",
+      "specifications": {
+        "wattage": 650
+      }
+    },
+    {
+      "id": "psu-750",
+      "type": "PSU",
+      "name": "Corsair 750W Gold",
+      "price": 8500,
+      "image": "https://via.placeholder.com/400x300/818cf8/ffffff?text=Corsair+750W",
+      "specifications": {
+        "wattage": 750
+      }
+    }
+  ],
+  "Cabinet": [
+    {
+      "id": "case-mid",
+      "type": "Cabinet",
+      "name": "NZXT H5 Flow",
+      "price": 7500,
+      "image": "https://via.placeholder.com/400x300/10b981/ffffff?text=NZXT+H5",
+      "specifications": {
+        "size": "Mid Tower"
+      }
+    },
+    {
+      "id": "case-mini",
+      "type": "Cabinet",
+      "name": "Cooler Master Q300L",
+      "price": 5500,
+      "image": "https://via.placeholder.com/400x300/06b6d4/ffffff?text=Cooler+Master",
+      "specifications": {
+        "size": "Mini Tower"
+      }
+    }
+  ]
+}

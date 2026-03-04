@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Selection</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="index.html">Custom PC Builder</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="component.html">Build PC</a>
+        <a href="checkout.html">Checkout</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="wizard-header">
+        <div>
+          <p class="eyebrow">Guided Configurator</p>
+          <h1>Build your PC step by step.</h1>
+          <p class="lead">Select one component at a time and watch your build update live.</p>
+        </div>
+      </section>
+
+      <section id="stepper" class="stepper"></section>
+
+      <section class="wizard-layout">
+        <div class="wizard-main">
+          <div class="header-row">
+            <div>
+              <h2 id="step-title">Step</h2>
+              <p class="lead" id="step-description"></p>
+            </div>
+            <div class="wizard-actions">
+              <button class="btn ghost" id="wizard-back" type="button">Back</button>
+              <button class="btn" id="wizard-next" type="button">Next</button>
+            </div>
+          </div>
+
+          <div id="wizard-content" class="grid wizard-content"></div>
+        </div>
+
+        <aside class="wizard-summary">
+          <h3>Build Summary</h3>
+          <ul id="summary-list" class="summary-list"></ul>
+          <div class="summary-total">
+            <span>Total</span>
+            <span class="price" id="summary-total">Rs. 0</span>
+          </div>
+          <div class="performance-panel">
+            <div class="perf-row">
+              <span class="muted">Gaming Performance</span>
+              <div class="perf-bar"><span id="perf-gaming"></span></div>
+            </div>
+            <div class="perf-row">
+              <span class="muted">Productivity Performance</span>
+              <div class="perf-bar"><span id="perf-productivity"></span></div>
+            </div>
+          </div>
+          <a class="btn ghost" href="build.html">Review Build</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">Custom PC Builder &copy; 2026</footer>
+
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/pages/component.js"></script>
+  </body>
+</html>

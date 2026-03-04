@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="index.html">Custom PC Builder</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="component.html">Build PC</a>
+        <a href="checkout.html">Checkout</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="header-row">
+        <div>
+          <p class="eyebrow">Checkout</p>
+          <h1>Finalize Your Build</h1>
+          <p class="lead">Choose pricing, payment, and optional add-ons.</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="checkout-card">
+          <h2>Order Summary</h2>
+          <ul id="checkout-summary"></ul>
+          <p class="muted">Base total: <span id="base-total">Rs. 0</span></p>
+        </div>
+        <div class="checkout-card">
+          <h2>Checkout</h2>
+          <div class="payment-icons">
+            <span class="payment-pill">UPI</span>
+            <span class="payment-pill">Card</span>
+            <span class="payment-pill">COD</span>
+          </div>
+          <form id="checkout-form">
+            <label class="check">
+              <input type="checkbox" name="addon" value="ExtendedWarranty" />
+              Extended Warranty (+Rs. 9,000)
+            </label>
+            <label class="check">
+              <input type="checkbox" name="addon" value="RGBLighting" />
+              RGB Lighting (+Rs. 4,000)
+            </label>
+            <label class="check">
+              <input type="checkbox" name="addon" value="ProfessionalAssembly" />
+              Professional Assembly (+Rs. 12,000)
+            </label>
+
+            <div class="field">
+              <label for="pricing">Pricing Strategy</label>
+              <select id="pricing">
+                <option value="RegularPricing">Regular Pricing</option>
+                <option value="StudentDiscountPricing">Student Discount</option>
+                <option value="FestivalPricing">Festival Pricing</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="payment">Payment Method</label>
+              <select id="payment">
+                <option value="UPIPayment">UPI</option>
+                <option value="CardPayment">Card</option>
+                <option value="CODPayment">Cash on Delivery</option>
+              </select>
+            </div>
+
+            <div class="panel soft">
+              <p class="muted" id="addons-desc">Custom PC</p>
+              <p class="price">Final Total: <span id="final-total">Rs. 0</span></p>
+            </div>
+
+            <button class="btn" type="submit">Place Order</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="checkout-result" class="panel checkout-success"></section>
+    </main>
+
+    <footer class="footer">Custom PC Builder &copy; 2026</footer>
+
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/pages/checkout.js"></script>
+  </body>
+</html>

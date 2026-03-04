@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Build</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="index.html">Custom PC Builder</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="component.html">Build PC</a>
+        <a href="checkout.html">Checkout</a>
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark Mode</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="header-row">
+        <div>
+          <p class="eyebrow">Build Overview</p>
+          <h1>My Build</h1>
+          <p class="lead">Review selected parts and compatibility checks.</p>
+        </div>
+        <a class="btn" href="checkout.html">Proceed to Checkout</a>
+      </section>
+
+      <section class="grid" id="build-list"></section>
+
+      <section class="panel">
+        <div>
+          <h2>Total Price</h2>
+          <p class="price" id="total-price">Rs. 0</p>
+        </div>
+        <div>
+          <h2>Compatibility Warnings</h2>
+          <ul id="compatibility-warnings"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Custom PC Builder &copy; 2026</footer>
+
+    <script type="module" src="js/theme.js"></script>
+    <script type="module" src="js/pages/build.js"></script>
+  </body>
+</html>
